@@ -67,13 +67,15 @@ Argue that this brand will fail. Give me your three strongest reasons.
 
 **Setup:** Create a new project → download your Block 1 brand brief from chat → upload it as **Project Knowledge** → connect **Canva**.
 
-**Project Instructions** (paste, fill the two blanks):
+**Project Instructions** — this is your prompt-writing rep. Fill *every* blank using the ingredients from Block 1 (Role · Goal · Audience · Voice · Constraints). The richer your blanks, the more on-brand the machine:
 ```text
-Act as the social-media manager for the brand in the project knowledge.
-Base the audience and product details on that brand brief.
+Act as a [role] for the brand in the project knowledge.
 
-Brand voice: [your tone]
-Visual style: [your look]
+Audience: [who these posts are for]
+Goal: [what you want the posts to achieve]
+Brand voice: [your tone — a few words]
+Visual style: [the look of the graphics]
+Always avoid: [your hard rules — what it should never do]
 
 When I give you a subject, write Instagram posts for it. For each post,
 return as plain text:
