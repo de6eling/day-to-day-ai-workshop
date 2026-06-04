@@ -44,12 +44,14 @@ first question.
 
 Then just **answer its questions**.
 
-**2. Capture it as your foundation file:**
+**2. Capture it as a file** — it opens in a side panel called an *artifact*:
 ```text
 Summarize the brand we built into a one-page brand brief. Make it a file.
 Include: brand name, one-sentence concept, target customer, problem we solve,
 product line, brand voice, and 3 launch-message ideas.
 ```
+
+**3. Save it:** click the download icon on the artifact and save it as **`brand-brief.md`**. You'll reuse this exact file in every later block.
 
 **Go further:**
 ```text
@@ -57,15 +59,13 @@ Argue that this brand will fail. Give me your three strongest reasons.
 ```
 …then make it defend the brand against its own attack.
 
-**Keep this file — every later block builds on it.**
-
 ---
 
 ## Block 2 — Projects & Connectors *(Chat)*
 
 **Goal:** build a project that turns any subject into on-brand Instagram posts **and** Canva graphics.
 
-**Setup:** Create a new project → download your Block 1 brand brief from chat → upload it as **Project Knowledge** → connect **Canva**.
+**Setup:** Create a new project → upload your **`brand-brief.md`** as **Project Knowledge** → connect **Canva** *(needs a free Canva account; click Allow when it asks to connect)*.
 
 **Project Instructions** — this is your prompt-writing rep. Fill *every* blank using the ingredients from Block 1 (Role · Goal · Audience · Voice · Constraints). The richer your blanks, the more on-brand the machine:
 ```text
@@ -93,6 +93,8 @@ consistent with the brand and these settings every time.
 This week's subject: [your subject]. Write 3 Instagram posts and create the graphics.
 ```
 
+**Save the posts:** type *"put these 3 posts in one file"*, then download it as **`social-posts.md`** (you'll need it in Block 3).
+
 **Go further:**
 ```text
 This week's subject: [a totally different subject]. Write 3 Instagram posts and create the graphics.
@@ -106,11 +108,11 @@ Does the voice and the look still hold? That's the real test of the machine.
 **Goal:** a task that writes a weekly competitive analysis into your brand folder, on its own.
 
 **Setup (go slow here):**
-1. Make a folder on your computer called **`my-brand`**.
-2. Download your **brand brief** (Block 1) and **social posts** (Block 2) from chat into it.
+1. Make a folder on your **Desktop** called **`my-brand`**.
+2. Move your **`brand-brief.md`** and **`social-posts.md`** files into it.
 3. Cowork → **Schedules → New task → Create with Claude**.
-4. **Add folder** (`my-brand`) — *do this before answering any questions.*
-5. Turn on **auto-accept edits**.
+4. **Add folder** (`my-brand`) — *before answering any questions* (this lets Claude read and write files there).
+5. Turn on **auto-accept edits** (lets it save files without asking each time).
 
 **Describe the task** (then answer Claude's setup questions):
 ```text
@@ -141,7 +143,7 @@ Download this file and save it to .claude/skills/brand-wiki/SKILL.md in this
 project (create the folders if needed), then tell me to restart Claude Code:
 https://raw.githubusercontent.com/de6eling/day-to-day-ai-workshop/main/skills/brand-wiki/SKILL.md
 ```
-Then **restart the Claude Code session** so the skill is ready.
+Then **restart Claude Code** — type `/exit`, then reopen it in the same folder. (Skills only load on a fresh start.)
 
 **Step 1 — Build the wiki:**
 ```text
@@ -167,6 +169,7 @@ Keep each note short and skimmable.
 ```text
 /brand-wiki
 ```
+That one command did everything you just did by hand — re-run it any time your folder changes.
 
 **Go further:** open `.claude/skills/brand-wiki/SKILL.md`, change how it builds the wiki (a new note type, your brand colors, a different layout), and run `/brand-wiki` again. *A skill is just a file you own and can reshape.*
 
