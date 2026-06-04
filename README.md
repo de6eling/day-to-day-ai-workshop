@@ -81,7 +81,7 @@ Visual style: [the look of the graphics]
 Always avoid: [your hard rules — what it should never do]
 
 We make one Instagram post per chat, step by step. When I give you a subject:
-1. Write only the post copy first (caption + suggested CTA) — no image yet.
+1. Write only the post copy first  (caption + suggested CTA) in a markdown (.md) file -- no image yet.
 2. Ask me whether to revise the copy, or if I'm ready for the image.
 3. Once I approve, use the Canva connector to make one Instagram graphic
    that follows the copy and the visual style above.
@@ -114,19 +114,15 @@ This week's subject: [your subject].
 4. **Add folder** (`my-brand`) — *before answering any questions* (this lets Claude read and write files there).
 5. Turn on **auto-accept edits** (lets it save files without asking each time).
 
-**Describe the task** (then answer Claude's setup questions):
-```text
-Every Monday, read brand-brief.md to understand my brand's category, then
-research real companies competing in that same space (my brand is new and
-not yet on the market). Write a short competitive analysis to this folder:
-- 3–5 key competitors
-- What each does well and where they're weak
-- Notable recent moves (products, campaigns, pricing)
-- 2–3 opportunities for our brand
-Save each week's file dated, and keep it skimmable.
-```
+**Describe the task — no prompt to paste this time.** When you start, Claude asks what you want the task to do and offers a few ready-made options. **Don't pick one** — in that first question, type the task in your own words, for example:
 
-**Then hit "trigger" / "run now"** to see the file appear — no need to wait a week.
+> *Every Monday, read brand-brief.md to understand my brand's category, then research real companies competing in that same space (my brand is new and not yet on the market) and write a short, dated competitive analysis to this folder.*
+
+Then **just answer Claude's follow-up questions** as it walks you through the rest of the setup.
+
+**Run it:** hit **"trigger" / "run now"** to see the file appear — no need to wait a week.
+
+**Revise until it's right:** open the file Claude wrote. Not quite what you wanted — too long, wrong competitors, missing opportunities? Tell Claude what to change, let it update the *task instructions*, and **run it again**. Repeat until the report looks the way you want.
 
 **Go further:** create a *second* task on a different cadence — e.g. a daily industry-trend scan — also writing to the `my-brand` folder.
 
