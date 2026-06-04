@@ -80,29 +80,26 @@ Brand voice: [your tone — a few words]
 Visual style: [the look of the graphics]
 Always avoid: [your hard rules — what it should never do]
 
-When I give you a subject, write Instagram posts for it. For each post,
-return as plain text:
-- Post copy
-- Visual direction
-- Suggested CTA
+We make one Instagram post per chat, step by step. When I give you a subject:
+1. Write only the post copy first (caption + suggested CTA) — no image yet.
+2. Ask me whether to revise the copy, or if I'm ready for the image.
+3. Once I approve, use the Canva connector to make one Instagram graphic
+   that follows the copy and the visual style above.
+4. Ask me whether to revise the image.
+5. When I'm happy, tell me to start a new chat in this project for the next post.
 
-Then use the Canva connector to create an Instagram graphic for each post,
-following its visual direction and the visual style above. Keep everything
-consistent with the brand and these settings every time.
+Keep everything consistent with the brand and these settings every time.
 ```
 
-**Run it:**
+**Run it** — give a subject; the project walks you through copy → image, one post at a time:
 ```text
-This week's subject: [your subject]. Write 3 Instagram posts and create the graphics.
+This week's subject: [your subject].
 ```
+**Make 3 posts total** — start a **new chat in the project** for each one. Notice the project still knows your brand in every new chat.
 
-**Save the posts:** type *"put these 3 posts in one markdown file, starting with a short header naming the brand and its voice"*, then download it as **`social-posts.md`** (you'll need it in Block 3).
+**Save the posts:** in one chat, paste the copy from your finished posts and type *"put these in one markdown file, starting with a short header naming the brand and its voice"*, then download it as **`social-posts.md`** (you'll need it in Block 3).
 
-**Go further:**
-```text
-This week's subject: [a totally different subject]. Write 3 Instagram posts and create the graphics.
-```
-Does the voice and the look still hold? That's the real test of the machine.
+**Go further:** start a new chat and give a *totally different* subject — does the voice and the look still hold? That's the real test of the machine.
 
 ---
 
