@@ -108,6 +108,8 @@ This week's subject: [your subject].
 ```
 **Make 3 posts total** — start a **new chat in the project** for each one. Notice the project still knows your brand in every new chat.
 
+> **Behind from Block 1?** Grab a ready-made brief from [`examples/`](examples/) and use it as your `brand-brief.md` Project Knowledge.
+
 **Save the posts:** in one chat, paste the copy from your finished posts and type *"put these in one markdown file, starting with a short header naming the brand and its voice"*, then download it as **`social-posts.md`** (you'll need it in Block 3).
 
 **Go further:** start a new chat and give a *totally different* subject — does the voice and the look still hold? That's the real test of the machine.
@@ -184,4 +186,5 @@ Walk me through what you pulled, then render the dashboard.
 ## What's in this repo
 
 - `README.md` — this page (all the prompts).
+- `examples/` — ready-made Block 1 brand briefs (one per starting idea) for anyone who falls behind.
 - `skills/brand-wiki/` — a bonus **Brand Wiki** skill for Claude Code: turn your `my-brand` folder into a navigable offline wiki. Optional, great to try after the workshop.
