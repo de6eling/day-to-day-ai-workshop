@@ -9,9 +9,9 @@ Throughout the day you'll build **one ecommerce brand** and carry it through fou
 | 1 — Prompting & Artifacts | Claude **Chat** | Your brand, captured as a one-page brief |
 | 2 — Projects & Connectors | Claude **Chat** | A social-post machine that makes posts + Canva graphics |
 | 3 — Routines & Tasks | Claude **Cowork** | A weekly competitor report that writes itself to a folder |
-| 4 — Large Context & Skills | Claude **Code** | Your whole brand as a navigable wiki you open in a browser |
+| 4 — Live Artifacts & Connectors | Claude **Cowork** | A live dashboard that pulls real data from a connector you use |
 
-*Each block uses a different Claude surface (Chat → Cowork → Code) — your presenter will point you to each. Anything in `[brackets]` is a fill-in-the-blank: replace it, brackets and all.*
+*Blocks 1–3 build your brand; Block 4 finishes with a live dashboard from a connector you already use. The surface escalates Chat → Cowork — your presenter will point you to each. Anything in `[brackets]` is a fill-in-the-blank: replace it, brackets and all.*
 
 > **The one idea for the day:** an AI is like predicting the next line of a movie.
 > *Context* = the movie · *Tokens* = the words · *Prompt* = everything before the next line · *Response* = the line that comes next.
@@ -22,7 +22,18 @@ Throughout the day you'll build **one ecommerce brand** and carry it through fou
 
 **Goal:** bring *your own* brand idea to life through conversation, then save it as a file.
 
-**1. Start the strategist conversation** (paste, then fill in your idea):
+**1. Start the strategist conversation.** First, pick your starting idea. Below are a few to get you going — **keep the one you like and delete the rest**, or replace them all with a rough idea of your own:
+
+```text
+Starting ideas (keep one, delete the others — or write your own):
+- Refillable home-cleaning products that ship as concentrated pods, so you buy the bottle once and never throw it away.
+- A snack box for desk workers built around afternoon energy slumps — no sugar crash, portioned for one.
+- Everyday basics (tees, socks, totes) made from deadstock fabric that would otherwise be thrown out.
+- Starter kits for first-time houseplant owners — the plant, the right pot, and a simple care card that texts you reminders.
+- Pet treats made from "ugly" produce and trimmings that grocery stores reject.
+```
+
+Then paste the prompt below, with your chosen idea filled in:
 ```text
 Act as a brand strategist. I have a rough idea for a new ecommerce
 brand, and I want you to help me refine it through conversation.
@@ -114,66 +125,63 @@ This week's subject: [your subject].
 4. **Add folder** (`my-brand`) — *before answering any questions* (this lets Claude read and write files there).
 5. Turn on **auto-accept edits** (lets it save files without asking each time).
 
-**Describe the task — no prompt to paste this time.** When you start, Claude asks what you want the task to do and offers a few ready-made options. **Don't pick one** — in that first question, type the task in your own words, for example:
-
-> *Every Monday, read brand-brief.md to understand my brand's category, then research real companies competing in that same space (my brand is new and not yet on the market) and write a short, dated competitive analysis to this folder.*
+When you start, Claude asks what you want the task to do and offers a few ready-made options. **Don't pick one** — in that first question, type the task in your own words.
 
 Then **just answer Claude's follow-up questions** as it walks you through the rest of the setup.
 
 **Run it:** hit **"trigger" / "run now"** to see the file appear — no need to wait a week.
 
-**Revise until it's right:** open the file Claude wrote. Not quite what you wanted — too long, wrong competitors, missing opportunities? Tell Claude what to change, let it update the *task instructions*, and **run it again**. Repeat until the report looks the way you want.
+**Revise until it's right:** open the file Claude wrote. Not quite what you wanted — too long, wrong competitors, missing opportunities? Manually update the *task instructions*, and **run it again**. Repeat until the report looks the way you want.
 
 **Go further:** create a *second* task on a different cadence — e.g. a daily industry-trend scan — also writing to the `my-brand` folder.
 
 ---
 
-## Block 4 — Large Context & Skills *(Claude Code)*
+## Block 4 — Live Artifacts & Connectors *(Cowork)*
 
-**Goal:** turn your whole `my-brand` folder into a navigable wiki you open in your browser.
+**Goal:** build a **live artifact** — a dashboard that pulls real data from a connector you use and renders it as something interactive you can keep open. The artifacts you made earlier were just *files* — a snapshot, frozen the moment you saved them. A **live artifact** is different: it connects to a live source, so it actually works and stays up to date.
 
-Open Claude Code **in your `my-brand` folder**.
+**1. Pick a connector.** Below are a few dashboards you could build — **keep the one you want and delete the rest**, or pick another connector you already have:
 
-**Step 0 — Install the skill** (no GitHub account or `git` needed — Claude Code just downloads one file):
 ```text
-Use curl to download this URL and save it, unchanged, to
-.claude/skills/brand-wiki/SKILL.md in this project (create the folders if
-needed). Do not rewrite the contents. Then tell me to restart Claude Code:
-https://raw.githubusercontent.com/de6eling/day-to-day-ai-workshop/main/skills/brand-wiki/SKILL.md
-```
-Then **restart Claude Code** — type `/exit`, then reopen it in the same folder. (Skills only load on a fresh start.) Type `/` and check that **brand-wiki** appears in the list.
-
-**Step 1 — Build the wiki:**
-```text
-Read every file in this folder and treat it all as raw source material
-about my brand.
-
-Decide the key topics yourself, then distill the material into one short note
-per topic. For each note, note which other notes it relates to.
-
-Then build a single self-contained file called brand-wiki.html in this
-folder that I can open by double-clicking. It must:
-- show an interactive force-directed graph: each note is a node, lines connect related notes
-- let me click a node to open and read that note beside the graph
-- use only plain inline JavaScript — no external libraries, no CDN, no
-  internet — so it works fully offline
-
-Keep each note short and skimmable.
+Connector ideas (keep one, delete the others — or use another you have):
+- Shopify — a store dashboard: revenue, orders, average order value, top products, low stock
+- Slack — a daily-update dashboard: highlights from your key channels, who needs a reply, action items
+- Google Calendar — a week-ahead dashboard: meetings, focus blocks, scheduling conflicts
+- Gmail — an inbox-triage dashboard: who's waiting on you, threads to reply to, newsletters to skip
+- Linear / Notion — a project dashboard: what's in progress, what's blocked, what shipped this week
 ```
 
-**Step 2 — Double-click `brand-wiki.html`** and explore your brand's whole story as a graph.
+**Setup:** Cowork → **connect your chosen connector** *(click Allow when it asks).*
 
-**Step 3 — The level-up:** run the same thing in one word:
+**2. Build the live artifact** — paste, filling in the blanks for the connector you picked:
 ```text
-/brand-wiki
-```
-That one command did everything you just did by hand — re-run it any time your folder changes.
+Create a live artifact: a dashboard that uses the [connector] connector to
+pull real data and stay up to date.
 
-**Go further:** open `.claude/skills/brand-wiki/SKILL.md`, change how it builds the wiki (a new note type, your brand colors, a different layout), and run `/brand-wiki` again. *A skill is just a file you own and can reshape.*
+It should show me at a glance:
+- [the 3–5 things you most want to see — e.g. today's orders, unread highlights, this week's meetings]
+
+Make it:
+- one interactive artifact I can keep open
+- visual — cards, big numbers, and simple charts, not walls of text
+- built on the real data you pull from the connector right now; tell me the exact time range it covers
+- organized so the single most important thing is at the top
+
+Walk me through what you pulled, then render the dashboard.
+```
+
+**3. Refine it live** — the artifact updates in place as you ask:
+```text
+[a tweak — e.g. "add a bar chart of orders by day", "group these by status",
+"highlight anything that needs my attention in red"]
+```
+
+**Go further:** ask it *"which one thing here should I act on first, and why?"* — let the dashboard not just show the data but tell you what to do about it.
 
 ---
 
 ## What's in this repo
 
 - `README.md` — this page (all the prompts).
-- `skills/brand-wiki/` — the **Brand Wiki** skill used in Block 4.
+- `skills/brand-wiki/` — a bonus **Brand Wiki** skill for Claude Code: turn your `my-brand` folder into a navigable offline wiki. Optional, great to try after the workshop.
